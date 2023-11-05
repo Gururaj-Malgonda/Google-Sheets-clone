@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+.grid-box{
+    width: 100vw;
+    height: 75vh;
+    overflow: scroll;
+}
+.grid-box::-webkit-scrollbar {
+    display: none;
+  }
+#share-btn{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    background-color: #C2E7FF;
+}
+.hidden-input{
+    width: 0px;
+    height: 0px;
+}
+.option-btn {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+.option-btn:hover {
+    background-color: #ededed;
+}
+.vertical-line{
+    height: 20px;
+    border-right:2px solid #C7C7C7 ;
+}
+#head{
+    background-color: #F9FBFD;
+}
+#tools{
+    background-color: #EDF2FA;
+    padding: 10px;
+    border-radius: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cell{
+    min-width: 100px;
+    min-height: 25px;
+    border: 1px solid #E1E1E1 ;
+}
+.srno-cell{
+    width: 45px;
+    min-height: 25px;
+    text-align: center;
+    color: #444746;
+    border: 1px solid #E1E1E1 ;
+}
+.rowHead-Cell{
+    text-align: center;
+    color: #444746;
+}
+.grid-row{
+    display: flex;
+}
+.grid-box > .grid-body > .row-head{
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff ;
+}
+.srno{
+    position: sticky;
+    left: 0px;
+    background-color: #ffffff ;
+}
+.srno > div:nth-child(1){
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff ;
+}
+
